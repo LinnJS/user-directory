@@ -1,2 +1,15 @@
-<h1>hello world</h1>
-<p>{{#users}} {{name}} {{/users}}</p>
+<p>
+  {{#users}} {{name}} {{/users}}
+</p>
+
+<h1>Galactic Droid Directory</h1>
+
+<div class="wrapper">
+  <div class="profileContainer">
+    {{#users}}
+      <img src="{{avatar}}" alt="Droid Avatar for Profile">
+      <h1> {{name}}</h1>
+      <p>{{job}}, {{company}}</p>
+  </div>
+  {{/users}}
+</div>
