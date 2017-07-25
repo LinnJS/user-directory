@@ -1,0 +1,15 @@
+{
+  "private":"true",
+  "name": "userdirectory",
+  "version": "1.0.0",
+  "description": "Iron Yard User Directory daily project. Practice imlimenting node.js express.js and HTML mustache.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Justin Linn",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
