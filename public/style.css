@@ -2,6 +2,11 @@ h1 {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: #337cd0;
+}
+
 .wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -12,6 +17,7 @@ h1 {
   height: 17em;
   margin: 1em;
   text-align: center;
+  border: gray solid .1em;
 }
 
 .profileContainer>h2 {
