@@ -13,6 +13,7 @@
     "express": "^4.15.3",
     "mst": "^2.4.0",
     "mustache": "^2.3.0",
-    "mustache-express": "^1.2.5"
+    "mustache-express": "^1.2.5",
+    "nodemon": "^1.11.0"
   }
 }

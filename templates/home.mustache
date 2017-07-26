@@ -1,15 +1,30 @@
-<p>
-  {{#users}} {{name}} {{/users}}
-</p>
+<!DOCTYPE html>
+<html>
 
-<h1>Galactic Droid Directory</h1>
+<head>
+  <meta charset="utf-8" lang="en">
+  <link rel="stylesheet" href="style.css">
+  <title>Galactic Droid Directory</title>
+</head>
 
-<div class="wrapper">
-  <div class="profileContainer">
+<body>
+  <h1>Galactic Droid Directory</h1>
+
+  <div class="wrapper">
     {{#users}}
-      <img src="{{avatar}}" alt="Droid Avatar for Profile">
-      <h1> {{name}}</h1>
-      <p>{{job}}, {{company}}</p>
+      <div class="profileContainer">
+        <img src="{{avatar}}" alt="Droid Avatar for Profile">
+        <h2> {{name}}</h2>
+        {{#job}}
+          <p>{{job}}, {{company}}</p>
+        {{/job}}
+        {{^job}}
+        <p id="noJob">Available for Hire</p>
+        {{/job}}
+      </div>
+    {{/users}}
   </div>
-  {{/users}}
-</div>
+
+</body>
+
+</html>

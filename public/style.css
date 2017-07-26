@@ -1,0 +1,27 @@
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profileContainer {
+  width: 15em;
+  height: 17em;
+  margin: 1em;
+  text-align: center;
+}
+
+.profileContainer>h2 {
+  color: #337cd0
+}
+
+.profileContainer>p {
+  color: #848c96;
+}
+
+#noJob {
+  color: #cd6763;
+}
