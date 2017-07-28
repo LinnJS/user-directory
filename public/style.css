@@ -1,5 +1,10 @@
+body {
+  margin: 0 .5em;
+}
+
 h1 {
   text-align: center;
+  margin: 1em;
 }
 
 a {
@@ -21,11 +26,16 @@ a {
 }
 
 .profileContainer>h2 {
-  color: #337cd0
+  color: #337cd0;
 }
 
 .profileContainer>p {
   color: #848c96;
+}
+
+.profilePhoto {
+  border-radius: 5em;
+  border: thin solid gray;
 }
 
 #noJob {

@@ -1,1 +1,29 @@
-<h1>hello world</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" lang="en">
+  <link rel="stylesheet" href="/style.css">
+  <title></title>
+</head>
+
+<body>
+  <figure>
+    <img class="profilePhoto" src="{{avatar}}" alt="Profile Avitar">
+  </figure>
+  <h2>{{name}}</h2>
+  <p>{{address.city}}, {{address.country}} | {{job}}, {{company}}</p>
+  <p>{{email}} | {{phone}}</p>
+
+  <dl class="details">
+    <dt>Education</dt>
+    <dd>{{university}}</dd>
+    <dt>Skills</dt>
+    {{#skills}}
+    <dd>{{.}}</dd>
+    {{/skills}}
+  </dl>
+
+</body>
+
+</html>

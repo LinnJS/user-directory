@@ -1,7 +1,7 @@
 const express = require('express')
-const app = express()
-const mustacheExpress = require('mustache-express')
 const data = require('./data')
+const mustacheExpress = require('mustache-express')
+const app = express()
 
 app.use(express.static('public'))
 app.engine('mustache', mustacheExpress())
