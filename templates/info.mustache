@@ -7,22 +7,27 @@
   <title></title>
 </head>
 
-<body>
-  <figure>
-    <img class="profilePhoto" src="{{avatar}}" alt="Profile Avitar">
-  </figure>
-  <h2>{{name}}</h2>
-  <p>{{address.city}}, {{address.country}} | {{job}}, {{company}}</p>
-  <p>{{email}} | {{phone}}</p>
+  <body>
+    <div class="infoWrapper">
+    <figure>
+      <img class="profilePhoto" src="{{avatar}}" alt="Profile Avitar">
+    </figure>
 
-  <dl class="details">
-    <dt>Education</dt>
-    <dd>{{university}}</dd>
-    <dt>Skills</dt>
-    {{#skills}}
-    <dd>{{.}}</dd>
-    {{/skills}}
-  </dl>
+    <div class="infoBox">
+      <h2>{{name}}</h2>
+      <p>{{address.city}}, {{address.country}} | {{job}}, {{company}}</p>
+      <p>{{email}} | {{phone}}</p>
+
+      <dl class="details">
+        <dt>Education</dt>
+        <dd>{{university}}</dd>
+        <dt>Skills</dt>
+        {{#skills}}
+          <dd>{{.}}</dd>
+        {{/skills}}
+      </dl>
+    </div>
+</div>
 
 </body>
 

@@ -1,3 +1,7 @@
+*{
+  font-family: sans-serif;
+}
+
 body {
   margin: 0 .5em;
 }
@@ -12,9 +16,14 @@ a {
   color: #337cd0;
 }
 
+dt {
+
+}
+
 .wrapper {
   display: flex;
   flex-wrap: wrap;
+  /*flex-direction: column;*/
 }
 
 .profileContainer {
@@ -33,10 +42,17 @@ a {
   color: #848c96;
 }
 
+.infoWrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .profilePhoto {
   border-radius: 5em;
-  border: thin solid gray;
+  border: thin solid lightgray;
 }
+
+.infoBox {}
 
 #noJob {
   color: #cd6763;
