@@ -9,32 +9,39 @@
   </head>
 
   <body>
-    <div class="infoWrapper">
-      <figure>
-        <img class="profilePhoto" src="{{avatar}}" alt="Profile Avitar">
-      </figure>
+    <div class="infoFlex">
+      <div class="infoWrapper">
+        <figure>
+          <img class="profilePhoto" src="{{avatar}}" alt="Profile Avitar">
+        </figure>
 
-      <div class="infoBox">
-        <div class="contactInfo">
-          <h2>{{name}}</h2>
-          <p>
-            {{#address.city}} {{address.city}}, {{/address.city}} {{address.country}} |
-            {{#job}} {{job}}, {{/job}} {{company}} {{^job}}
-            <span id="noJob">Available for Hire</span></p>
-          {{/job}}
-          <p>{{email}} | {{phone}}</p>
+        <div class="infoBox">
+          <div class="contactInfo">
+            <h2>{{name}}</h2>
+            <p>
+              {{#address.city}} {{address.city}}, {{/address.city}} {{address.country}} |
+              {{#job}} {{job}}, {{/job}} {{company}} {{^job}}
+              <span id="noJob">Available for Hire</span></p>
+            {{/job}}
+            <p>{{email}} | {{phone}}</p>
+          </div>
+
+          <dl class="details">
+            {{#university}}
+              <dt>Education</dt>
+              <dd>{{university}}</dd>
+            {{/university}}
+            <dt>Skills</dt>
+            {{#skills}}
+              <dd>{{.}}</dd>
+            {{/skills}}
+          </dl>
+
+          <a href="/../"><button id="home" type="button" name="button">Click Here for More Droids</button></a>
+
+
+
         </div>
-
-        <dl class="details">
-          {{#university}}
-            <dt>Education</dt>
-            <dd>{{university}}</dd>
-          {{/university}}
-          <dt>Skills</dt>
-          {{#skills}}
-            <dd>{{.}}</dd>
-          {{/skills}}
-        </dl>
       </div>
     </div>
 

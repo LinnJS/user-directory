@@ -27,6 +27,7 @@ a {
   margin: 1em;
   text-align: center;
   border: gray solid .1em;
+  border-radius: 1em;
 }
 
 .profileContainer>h2 {
@@ -37,10 +38,21 @@ a {
   color: #848c96;
 }
 
-.infoWrapper {
-  margin-top: 4em;
+.infoFlex {
   display: flex;
   justify-content: center;
+  margin-top: 4em;
+}
+
+.infoWrapper {
+  margin: 4em 1em 0 1em;
+  display: flex;
+  justify-content: center;
+  background-color: #8BC1FF;
+  padding: 0 0 2em;
+  0;
+  border-radius: 2em;
+  width: 50em;
 }
 
 .profilePhoto {
@@ -52,6 +64,10 @@ a {
 
 .contactInfo {
   margin: 3em 0 0 0;
+}
+
+.contactInfo>h2 {
+  font-size: 35px;
 }
 
 .details {
@@ -68,4 +84,13 @@ dt {
 
 #noJob {
   color: #cd6763;
+}
+
+#home {
+  margin-top: 2.5em;
+  color: lightgray;
+  background-color: #337cd0;
+  border-radius: 1em;
+  padding: 1em;
+  width: 18em;
 }
