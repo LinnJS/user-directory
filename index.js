@@ -20,8 +20,6 @@ app.get("/info/:username", (req, res) => {
   res.render("info", user)
 })
 
-app.get("/info.mustache:username")
-
 app.listen(3000, () => {
   console.log('Listening to port 3000!')
 })
