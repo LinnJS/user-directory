@@ -3,6 +3,8 @@ const data = require('./data')
 const mustacheExpress = require('mustache-express')
 const app = express()
 
+const PORT = process.env.PORT || 3000
+
 app.use(express.static('public'))
 app.engine('mustache', mustacheExpress())
 app.set('views', './templates')
@@ -22,6 +24,6 @@ app.get('/info/:username', (req, res) => {
 
 app.get('/info.mustache:username')
 
-app.listen(3000 || 80, () => {
-  console.log('Listening to port 3000!')
+app.listen(PORT, () => {
+  console.log(`Listening to port ${PORT}!`)
 })
