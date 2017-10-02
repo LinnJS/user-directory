@@ -19,6 +19,8 @@ a {
 .wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-end;
 }
 
 .profileContainer {
@@ -28,6 +30,7 @@ a {
   text-align: center;
   border: gray solid .1em;
   border-radius: 1em;
+  box-shadow: 10px 8px 5px #dfe1e1;
 }
 
 .profileContainer>h2 {
@@ -48,11 +51,11 @@ a {
   margin: 4em 1em 0 1em;
   display: flex;
   justify-content: center;
-  background-color: #8BC1FF;
+  background-color: #b5dcff;
   padding: 0 0 2em;
-  0;
   border-radius: 2em;
   width: 50em;
+  box-shadow: 10px 8px 5px #dfe1e1;
 }
 
 .profilePhoto {

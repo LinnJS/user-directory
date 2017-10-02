@@ -8,18 +8,20 @@ app.engine('mustache', mustacheExpress())
 app.set('views', './templates')
 app.set('view engine', 'mustache')
 
-app.get("/", (req, res) => {
-  res.render("home", data)
+app.get('/', (req, res) => {
+  res.render('home', data)
 })
 
-app.get("/info/:username", (req, res) => {
+app.get('/info/:username', (req, res) => {
   let username = req.params.username
   let user = data.users.find(function(person) {
     return person.username === username
   })
-  res.render("info", user)
+  res.render('info', user)
 })
 
-app.listen(3000, () => {
+app.get('/info.mustache:username')
+
+app.listen(3000 || 80, () => {
   console.log('Listening to port 3000!')
 })
