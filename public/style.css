@@ -7,6 +7,9 @@ body {
 }
 
 h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  text-shadow: 7px 7px 7px #dfe1e1;
   text-align: center;
   margin: 1em;
 }

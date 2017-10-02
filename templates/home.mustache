@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8" lang="en">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Galactic Droid Directory</title>
   </head>
@@ -12,18 +13,19 @@
     <h1>Galactic Droid Directory</h1>
 
     <div class="wrapper">
-      {{#users}}
-        <div class="profileContainer">
-          <img src="{{avatar}}" alt="Droid Avatar for Profile">
-          <h2> <a href="/info/{{username}}">{{name}}</a></h2>
-          {{#job}}
-            <p>{{job}}, {{company}}</p>
-          {{/job}}
-          {{^job}}
-          <p id="noJob">Available for Hire</p>
-          {{/job}}
-        </div>
-      {{/users}}
+
+        {{#users}}
+          <div class="profileContainer">
+            <img src="{{avatar}}" alt="Droid Avatar for Profile">
+            <h2> <a href="/info/{{username}}">{{name}}</a></h2>
+            {{#job}}
+              <p>{{job}}, {{company}}</p>
+            {{/job}}
+            {{^job}}
+            <p id="noJob">Available for Hire</p>
+            {{/job}}
+          </div>
+        {{/users}}
     </div>
 
   </body>
