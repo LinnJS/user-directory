@@ -5,9 +5,8 @@
   "description": "Iron Yard User Directory daily project. Practice imlimenting node.js express.js and HTML mustache.",
   "main": "index.js",
   "scripts":  {
-    "start": "clear && node index.js",
-    "watch":"clear && nodemon --config nodemon.json index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "watch":"nodemon --config nodemon.json index.js"
   },
   "author": "Justin Linn",
   "license": "ISC",
