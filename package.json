@@ -1,12 +1,12 @@
 {
-  "private": "true",
-  "name": "userdirectory",
+  "private": "false",
+  "name": "user-directory",
   "version": "1.0.0",
   "description": "Iron Yard User Directory daily project. Practice imlimenting node.js express.js and HTML mustache.",
   "main": "index.js",
-  "scripts":  {
+  "scripts": {
     "start": "node index.js",
-    "watch":"nodemon --config nodemon.json index.js"
+    "watch": "nodemon --config nodemon.json index.js"
   },
   "author": "Justin Linn",
   "license": "ISC",
