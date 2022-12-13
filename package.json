@@ -11,7 +11,7 @@
   "author": "Justin Linn",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.3",
+    "express": "^4.17.3",
     "mst": "^2.4.0",
     "mustache": "^2.3.0",
     "mustache-express": "^1.2.5",
